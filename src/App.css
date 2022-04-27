@@ -1,0 +1,209 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  /* background-color: #282c34; */
+  /* background: rgb(228, 236, 170);
+  background: linear-gradient(
+    180deg,
+    rgba(228, 236, 170, 1) 0%,
+    rgba(210, 196, 122, 1) 3%,
+    rgba(226, 149, 7, 1) 100%,
+    rgba(215, 203, 92, 1) 100%
+  ); */
+  /* background: rgb(228, 236, 170);
+  background: radial-gradient(
+    circle,
+    rgba(228, 236, 170, 1) 0%,
+    rgba(210, 196, 122, 1) 3%,
+    rgba(226, 149, 7, 1) 100%,
+    rgba(215, 203, 92, 1) 100%
+  ); */
+  background: rgb(217, 204, 103);
+  background: radial-gradient(
+    circle,
+    rgba(217, 204, 103, 1) 0%,
+    rgba(210, 196, 122, 1) 3%,
+    rgba(226, 149, 7, 1) 100%,
+    rgba(215, 203, 92, 1) 100%
+  );
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+body {
+  background: rgb(184, 208, 14);
+  background: linear-gradient(
+    180deg,
+    rgba(184, 208, 14, 1) 10%,
+    rgba(210, 196, 122, 1) 11%,
+    rgba(226, 149, 7, 1) 98%,
+    rgba(116, 203, 182, 1) 99%
+  );
+  background-size: contain;
+  margin: 0px;
+  padding: 0px;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.container {
+  width: 1280px;
+  /* background-color: red; */
+  /* border: 1px solid gray; */
+  margin-top: 40px;
+}
+
+.header {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(217, 204, 103, 0.3);
+  position: absolute;
+  top: 0px;
+}
+
+.header h2 {
+  line-height: 0px;
+  color: black;
+}
+
+.signs {
+  width: 1250px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* background-color: gray; */
+  margin-top: -40px;
+  padding: 0px;
+}
+
+.image {
+  border: 1px solid rgb(184, 208, 14);
+  border-radius: 100px;
+  transform: scale(1.2);
+  /* background-color: gray; */
+  box-shadow: 0px 0px 5px 1px rgb(179, 124, 42);
+}
+
+.image2:hover {
+  cursor: pointer;
+}
+
+.image2 {
+  width: 80px;
+  height: 80px;
+}
+
+.name,
+.email {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  margin-bottom: 0px;
+  width: 250px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.name::placeholder {
+  color: white;
+}
+
+.date {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  border-bottom: 1px solid white;
+  color: white;
+  width: 160px;
+  margin-top: -10px;
+  margin-left: 10px;
+  font-size: 20px;
+  width: 250px;
+}
+
+.input_div {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 15px;
+}
+
+.sun_logo {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  top: 0px;
+  left: 460px;
+  animation: sun infinite 15s linear;
+}
+
+@keyframes sun {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.submit,
+.reset {
+  padding: 5px 20px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  outline: none;
+  border: 1px solid rgb(10, 10, 9);
+  margin-right: 50px;
+  font-size: 18px;
+  margin-top: 30px;
+}
+.submit:hover,
+.reset:hover {
+  background-color: rgb(61, 60, 60);
+  color: white;
+  cursor: pointer;
+}
+
+.close_btn:hover {
+  cursor: pointer;
+}
+
+.fig_cap {
+  text-transform: capitalize;
+}
+
+.select_sign {
+  margin-top: 30px;
+}
